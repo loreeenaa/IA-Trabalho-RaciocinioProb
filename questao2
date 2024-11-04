@@ -1,0 +1,9 @@
+% Definindo probabilidade de 0.7125 para o evento V(true) diretamente, considerando Str = snow_covered
+0.7125::v(true) :- str(snow_covered).
+0.2875::v(false) :- str(snow_covered).
+
+% Definindo o evento fixo
+str(snow_covered).
+
+% Consulta
+query(v(true)).
